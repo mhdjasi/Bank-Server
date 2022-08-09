@@ -1,0 +1,25 @@
+10. response codes 
+
+1xx  - information
+2xx  - success
+3xx  - redirection
+4xx  - client error
+5xx  - server error
+
+11. JWT Token - JSON Web Token
+     (to validate user)
+
+     install jwt token - npm i jsonwebtoken
+
+     11.1 Token Generation - sign()
+
+     11.2 Token Validation - verify()
+
+12.  Middleware - first happen before any other functions 
+
+     12.1 Application Specific Middleware - first happen before any other functions
+     (use in all)
+
+     12.2 Router Specific Middleware
+
+
