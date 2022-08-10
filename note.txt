@@ -23,3 +23,33 @@
      12.2 Router Specific Middleware
 
 
+
+     //3. HTTP request resolve
+
+//GET Request - to read data
+// app.get('/', (req, res) => {
+//     res.send('GET METHOD')
+// })
+
+//POST Request - to create data
+// app.post('/', (req, res) => {
+//     res.send('POST METHOD')
+// })
+
+//PUT Request - to update data completely
+// app.put('/', (req, res) => {
+//     res.send('PUT METHOD')
+// })
+
+//PATCH Request - to update data partially
+// app.patch('/', (req, res) => {
+//     res.send('PATCH METHOD')
+// })
+
+//DELETE Request - to remove data 
+// app.delete('/', (req, res) => {
+//     res.send('DELETE METHOD')
+// })
+
+
+
