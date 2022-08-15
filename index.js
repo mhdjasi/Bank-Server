@@ -115,6 +115,14 @@ app.post('/transaction',jwtMiddleware, (req, res) => {
     }
 })
 
+//onDelete api
+app.delete('/onDelete:acno',(req,res)=>{
+    dataService.onDelete(req.params.acno)
+    .then(result=>{
+        res.status(result.statusCode).json(result)
+    })
+})
+
 
 //4. set up port number
 app.listen(3000, () => {

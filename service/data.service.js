@@ -189,6 +189,27 @@ const getTransaction = (acno) => {
     })
 }
 
+//onDelete
+const onDelete = (acno)=>{
+  return db.User.deleteOne({acno})
+  .then(result=>{
+    if(result){
+      return {
+        statusCode: 200,
+        status: true,
+        message: 'Deleted Successfully'
+      }
+    }
+    else{
+      return {
+        statusCode: 401,
+        status: false,
+        message: 'incorrect  Account number'
+      }
+    }
+  })
+}
+
 
 //to export 
 module.exports = {
@@ -196,7 +217,9 @@ module.exports = {
   login,
   deposit,
   withdraw,
-  getTransaction
+  getTransaction,
+  onDelete
+
 
 }
 
